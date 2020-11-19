@@ -1,0 +1,252 @@
+:root {
+  --primary-color: #df2320;
+  --white-bgcolor: #efefef;
+  --gray-bgcolor: #707070;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  color: black;
+  font-size: 15px;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.ui.inverted.top.fixed.menu {
+  background-color: #df2320 !important;
+}
+
+.avatar-editing-canvas{
+  border:1px solid #000000;
+  margin-bottom:30px;
+  position: absolute;
+}
+
+#canvases{
+  position: relative;
+}
+
+#avatar-buttons{
+  margin-top:530px;
+}
+
+.avatar-items img{
+  width: 50px;
+}
+
+.hidden{
+  display:none;
+}
+
+/* HOMEPAGE */
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("/assets/homepage/bg2.jpg") no-repeat center center/cover;
+  overflow: hidden;
+  color: white;
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(200, 31, 28, 0.75);
+}
+
+.showcase-box {
+  background: rgba(255,255,255,0);
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.showcase-h2 {
+  font-size: 25px;
+  margin-top: -10px;
+  font-weight: 100;
+}
+
+.showcase-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-h1{
+  position: relative;
+  font-family: "Century Gothic";
+  bottom: 17px;
+  font-size: 90px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.showcase img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.showcase .showcase-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  background: none;
+  margin: 0 5px;
+  padding: 18px 40px;
+  text-align: center;
+  border-style:solid;
+  border-color: white;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-weight: 520;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: white;
+  color:black;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 8px;
+  color: black;
+}
+
+.btn-primary:hover {
+  background: none;
+  color:white;
+}
+
+.primary-section{
+  display:grid;
+  grid-template-columns: 20vw 40vw;
+  padding: 80px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-section-text{
+  max-width: 500px;
+}
+
+.primary-section-text h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.primary-section-text p {
+  font-size: 18px;
+}
+
+.secondary-section{
+  display:grid;
+  grid-template-columns: 40vw 20vw;
+  justify-items: center;
+  background: var(--white-bgcolor);
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-section img{
+  width:200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.secondary-section-text{
+  max-width: 500px;
+  text-align: right;
+}
+
+.secondary-section-text h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.secondary-section-text p {
+  font-size: 18px;
+}
+
+.conversion-section{
+  display:flex;
+  flex-direction: column;
+  background: var(--primary-color);
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.conversion-section h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.conversion-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.conversion-section .btn {
+  width:250px;
+  text-shadow: none;
+  box-shadow: none;
+}
